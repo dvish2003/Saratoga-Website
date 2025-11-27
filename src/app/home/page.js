@@ -4,17 +4,19 @@ import Image from "next/image";
 const HomePage = () => {
   return (
     <section className="relative min-h-screen bg-black overflow-hidden">
-      <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.02)_1px,transparent_1px)] bg-[size:60px_60px]"></div>
-      <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.04)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.04)_1px,transparent_1px)] bg-[size:28px_28px] animate-pulse"></div>
+      <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.02)_1px,transparent_1px)] bg-size-[60px_60px]"></div>
+      <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.04)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.04)_1px,transparent_1px)] bg-size-[28px_28px] animate-pulse"></div>
 
       <div className="absolute top-1/4 -left-10 w-72 h-72 bg-white/5 rounded-full blur-3xl"></div>
       <div className="absolute bottom-1/4 -right-10 w-96 h-96 bg-white/3 rounded-full blur-3xl"></div>
 
-      <div className="absolute inset-0 bg-linear-to-b from-transparent via-black to-black"></div>
+      <div className="absolute inset-0 bg-black/80"></div>
 
       <div className="relative z-10 flex flex-col lg:flex-row items-center justify-center min-h-screen px-4 sm:px-6 lg:px-16 py-10 lg:py-0">
         <div className="lg:w-5/12 flex flex-col justify-center text-center lg:text-left mb-12 lg:mb-0">
           <div className="mx-auto lg:mx-0">
+            <br />
+            <br />
             <p className="text-sm sm:text-base text-gray-400 font-light tracking-[0.25em] uppercase mb-5">
               Saratoga Essentials
             </p>
@@ -51,10 +53,10 @@ const HomePage = () => {
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-              <button className="px-8 py-4 bg-white text-black font-semibold tracking-wider uppercase rounded-full border border-white/20 hover:bg-gray-200 hover:scale-105 transform transition-all duration-300 shadow-2xl hover:shadow-white/20">
+              <button className="w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 bg-white text-black font-semibold tracking-wider uppercase rounded-full border border-white/20 hover:bg-gray-200 hover:scale-105 transform transition-all duration-300 shadow-2xl hover:shadow-white/20">
                 Explore Collection
               </button>
-              <button className="px-8 py-4 bg-transparent text-white font-semibold tracking-wider uppercase rounded-full border border-white/40 hover:bg-white/10 hover:scale-105 transform transition-all duration-300">
+              <button className="w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 bg-transparent text-white font-semibold tracking-wider uppercase rounded-full border border-white/40 hover:bg-white/10 hover:scale-105 transform transition-all duration-300">
                 About Brand
               </button>
             </div>
